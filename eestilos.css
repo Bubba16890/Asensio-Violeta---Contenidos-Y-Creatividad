@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+body {font-family: Heebo wght400;}
+title {font-family: Heebo wght700}
+img {max-width: 100%;}
+a {text-decoration: none; color: whitesmoke;}
+
+
+.nav {display: flex; align-items: center;}
+.caja {display: grid; grid-template-columns: auto auto auto; gap: 10px; margin-right: 3px;}
+.caja1 {grid-template-columns: auto auto auto; gap: 20px; margin-left: 4%; margin-right: 4%; padding-bottom: 3%; padding-top: 10px;}
+.caja2 {display: grid; grid-template-columns: auto auto auto; gap: 8px; margin-right: 3%; padding-top: 5px; margin-left: 3%; margin-bottom: 5px;}
+.cajaa {display: grid; grid-template-columns: auto auto auto; gap: 10px; margin-right: 3px; position: absolute;}
+
+.mySlides {width: 80% ; margin-top: 5%; opacity: 1; margin-left: 9%}
+
+footer {text-align: center; padding:3% ;background-color: whitesmoke; color: black; font-size: 20px; line-height: 3px;}
+
+.foto {width: 80%; padding-top: 5%}
+.coca {margin-bottom: 10%}
+.viole {margin-left: 20%}
+.fin {width: 30%;}
+
+.menu{text-align: center; padding: 12px; color: white; font-size: 60px; text-decoration: none; padding-top: 10px; font-family: Heebo wght700} 
+
+.logo {width: 10%; margin-left: 2%; min-width: 250px}
+
+.boox {text-align: center; background: black; font-size: 25px; color: whitesmoke; padding: 10px; margin-bottom: 25px; padding-inline: 10px;}
+	  .boox a:hover {font-family:cursive; font-size: 20px;}
+
+.boxx {text-align: center; background: black; font-size: 18px; color: white; padding: 5px; text-decoration: none; padding-inline: 20px;}
+
+.rubia {width: 100% ; margin-top: 5%; opacity: 1;}
+.tt{margin-bottom: 10%;}
+
+.foto {max-width: 100%; align-content: center;}
+.cafes {max-width: 100%; align-content: right;}
+.cafess {max-width: 60%; align-content: right; padding: 0px; margin-right: 2px;}
+.mano {max-width: 80%; align-content: right; padding: 10px; margin-right: 2px;}
+.subtitulos {text-align: center; font-size: 20px; color: black; padding: 5px; margin-bottom: 20px;}
+
+.p1 {text-decoration: bold; font-size: 22px;}
+.p {font-size: 19px; line-height: 1px;}
+h2 {padding: 10px; font-size: 40px; }
+.cafe {width:100%; overflow:auto;}
+.mycontainer div {width:33%; float:right; line-height: 0px; padding-bottom: 0px;}
+
+h1 {font-size: 19px;}
+
+.banner {position: relative; margin-bottom: 15px; overflow: hidden; display: block;}
+.bannerimg {position: relative; overflow: hidden; display: block;}
+
+.mySlides {width: 80% ; margin-top: 2%; opacity: 2; margin-left: 9%}
+.texto {margin-top: 3px; font-size: 18px;}
+
+.efecto {width: 95%; max-width: 600px; margin: 50px auto; position: relative; display: flex; align-items: center;}
+.par {text-align: center; position: absolute;  }
+.papel {font-size: 25px; }
+.btn {font-size: 15px; text-decoration: underline; color: darkslategrey;}
+
+.cardcontainer {display: flex; justify-content: center; flex-wrap: wrap; margin-top: 10px;}
+.card {width: 200px; border-radius: 8px; overflow: hidden; box-shadow: 0px 2px 2px; margin: 20px; 
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+	.card:hover {transform: scale(1.05); box-shadow: 0 10px 20px}
+
+.cardcont {padding: 10px;}
+	.card img {width: 100%; height: auto;}
+	.card h3 {font-size: 20px; margin-bottom: 2px;}
+	.card p {font-size: 13px; line-height: 1.3;}
+
+.uña{text-align: center; background: grey; font-size: 17px; color: whitesmoke; padding: 5px;}
+.uñaa{text-align: center; background: grey; font-size: 20px; color: whitesmoke; padding: 5px; margin-bottom: 1px;}
+form {max-width: 800px; margin: auto; border: 1px; padding: 20px; border border-radius: 10px;}
+input {border-radius: 7px; padding: 6px; border: 1px solid #000;}
+
+.vaso {width: 100%; height: 100%; align-content: center;}
+.text1 {color: black; font-size: 24px; font-weight: 300; margin-top: 30px; text-align: center;}
+.color-select {width: 100%; height: 50px; background-color: dimgrey; display: flex; align-items: center; justify-content: center; margin-top: 30px;}
+.color-select div {background: black; width: 30px; height: 30px; border-radius: 50%; margin-right: 30px; cursor: pointer;}
+.imagenes {width: 100%; align-content: center; align-items: center; padding-left: 230px;}
+.color-select #negro {background: black;}
+.color-select #azul {background: blue;}
+.color-select #marron {background: saddlebrown;}
+.text2 {color: black; font-size: 24px; font-weight: 300; margin-top: 30px; text-align: center;}
+.text3 {color: black; font-size: 30px; font-weight: 300; margin-bottom:3px; text-align: center;}
+
+
+@keyframes mover {
+	0%{transform: translate(100%);}
+}
+
+
+/*Tablet 768 px */
+@media (max-width:768px){
+  .caja div {width: 48%}
+
+}
+
+/*Celulares */
+@media (max-width: 480px){
+  .caja div {width: 98%; margin-left: 3%;}
+  .caja {display: block;}
+  .boox {display: block;}
+  header {display: block;}
+  .cajacontenedora div {width: 100%; flex-flow: wrap; display: block;}
+  .icono {display: block;}
+        nav, nav.box {display: none;}
+    .responsive {display: block;}
+  img {width: 98%;}
+  .imagenes div {width: 98%; margin-left: 3%;}
+
+}

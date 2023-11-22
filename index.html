@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIR COFFEE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="eestilos.css">
+  </head>
+
+<body style="background-color: black; color: white;">
+
+  <header>
+    <a href="index.html"><p class="menu">AIR COFFEE</p>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <a href="#" onclick="miFuncionNav(); miFuncionNav1()" class="icono">
+      <i class="fa fa-bars" aria-hidden= "true"></i>
+      </a>
+
+<nav class="navbar navbar-expand-lg  navbar-dark" style="color black; line-height: 2px; padding-inline: 2px; font-size: 20px;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="menucomida.html">CAFES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menucafe.html">COMIDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ropa.html">ROPA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobrenosotros.html">SOBRE NOSOTROS</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        CONCEPT COFFEE SHOP
+      </span>
+    </div>
+  </div>
+</nav>
+
+<br>
+      
+  </header>
+
+
+<section>
+  <div class= "caja">
+      <div>
+        <img src="airc.jpg">
+      </div>
+
+      <div>
+        <img src="zapas.jpg">
+      </div>
+
+      <div>
+        <img src="portada.jpg">
+      </div>
+    </div>
+
+</section>
+
+<br>
+
+</section>
+
+<div style="text-align: center">
+      <img src="carusel.jpg" class="mySlides"> 
+      <img src="carusel2.jpg" class="mySlides">
+      <img src="carusel1.jpg" class="mySlides">
+      <p style="font-size: 30px; margin-top: 3px; text-decoration: bold; ">AIR COFFEE CONCEPT STORE</p>
+        <p style="line-height: 1px; font-size: 22px;">¡Hace tu pedido!</p>
+        <p style="font-size: 18px;">Tus prendas favoritas de la mano de un cafe</p>
+    </div>
+</section>
+
+<br>
+<br>
+
+</body>
+
+  <footer>
+    <p>
+      <i class="fa fa-instagram" style="color: #2e2e2e;"></i>
+      <i class="fa fa-facebook" style="color: #3f4040;"></i>
+      <i class="fa fa-twitter" style="color: #424243;"></i>
+    </p> 
+    <p>Contacto</p>
+    <p style="text-decoration:underline; font-size: 16px;">Terminos y Condiciones</p>
+</footer>
+
+
+<script>
+//Script barra de navegacion 
+  
+function miFuncionNav() {
+var x = document.getElementById("navegador");
+if (x.className === " ") {
+x.className += "responsive";
+} else {
+x.className = " ";
+}
+}
+
+function miFuncionNav1() {
+var x = document.getElementById("navegador1");
+if (x.className === " ") {
+x.className += "responsive";
+} else {
+x.className = " ";
+}
+}
+
+//Slider 
+
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+  }
+ 
+carousel();
+ 
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > x.length) {slideIndex = 1}
+x[slideIndex-1].style.display = "block";
+setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}
+
+
+</script>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre Nosotros / AIR COFFEE</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="eestilos.css">
+
+    <a href="index.html"><img class="logo" src="logomarca.png">
+</head>
+
+<body>
+  <section>
+    <nav class="boox">
+      <a href="menucomida.html">CAFES</a>
+      <a href="#">/</a>
+      <a href="menucafe.html">COMIDA</a>
+      <a href="#"> / </a>
+      <a href="ropa.html">ROPA</a>
+    </nav>
+  </section>
+
+
+  <section>
+  <p class="uña">SUBSCRIBITE PARA ENTERARTE DE TODAS LAS NOVEDADES</p>
+    
+    <form method="_post" action="respuesta.html">
+      <p>Nombre y Apellido: <input type="text" name="name"></p>
+      <p>Email: <input type="email" name="correo"></p>
+      <p>¿De donde nos seguis? <input type="email" name="ubicacion"></p>
+      
+      <p><input type="submit" name="btnenviar"></p>
+    </form>
+
+<br>
+
+<section>
+  <h1 class="text3">VISITANOS</h1>
+    <div class="banner">
+      <div class="bannerimg">
+        <img src="banner.jpg" alt="" id=animado>
+      </div>
+  </section>
+
+</body>
+
+<footer>
+    <p>Contacto</p>
+    <p style="text-decoration:underline; font-size: 16px;">Terminos y Condiciones</p>
+</footer>
+
+
+<script type="text/javascript">
+  window.addEventListener("scroll", function(){
+    let animacion = document.getElementById("animado");
+    let posicionObj1 = animacion.getBoundingClientRect().top();
+    console.log (posicionObj1);
+    let tamañoDePantalla = window.innerHeight/5;
+
+    if(posicionObj1 < tamañoDePantalla) {
+      animacion.style.animation = "fade-up"
+    }
